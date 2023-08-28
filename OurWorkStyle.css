@@ -1,0 +1,100 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+
+  }
+  
+
+  .hero {
+    position: relative;
+    height: 800px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+  }
+
+  .navbar {
+    background-color: #01386a !important;
+    padding: 20px;
+    text-align: right;
+  
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+  }
+  
+  .nav-item {
+    margin-left: 20px;
+  }
+  
+  .nav-link {
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  /* Page header styles */
+  header {
+    text-align: center;
+    padding: 40px 0;
+    
+  }
+  
+  /* Case studies section styles */
+  .case-studies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px; /* Add margin-bottom to create spacing */
+  }
+  
+  .case-study {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .case-study img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+  }
+  
+  .case-study h2 {
+    margin-top: 10px;
+  }
+  
+  .case-study p {
+    margin-top: 10px;
+    color: #666;
+  }
+  
+  .case-study a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+  }
+  /* Footer styles */
+  footer {
+    background-color: #eee;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px; /* Add margin-top to create spacing */
+  }

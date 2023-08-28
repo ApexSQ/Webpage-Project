@@ -11,7 +11,13 @@ body {
     padding: 20px;
 
   }
-  
+
+  .container1 {
+
+    padding: 20px;
+    background-color: #01386a;
+
+  }
 
   .hero {
     position: relative;
@@ -25,7 +31,7 @@ body {
   }
 
   .navbar {
-    background-color: #01386a !important;
+    background-color: #ffffff !important;
     padding: 20px;
     text-align: right;
   

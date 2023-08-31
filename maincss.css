@@ -3,18 +3,30 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.5;
   background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container-head{
+  text-align: left;
+  padding: 20px;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 100%;
+  height: 50px;
   margin: 0 auto;
   padding: 20px;
 }
 
 .navbar {
   background-color: #fff;
-  padding: 20px;
   text-align: right;
+  padding: 23px;
+}
+
+.navbar.our-work {
+  background-color:rgb(1, 24, 68) !important;
 }
 
 .navbar-brand {
@@ -39,37 +51,31 @@ body {
 }
 
 .nav-link {
-  font-size: 16px;
+  font-size: 20px;
   color: #333;
-  text-decoration: none;
+  font-weight: bold;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-  color: #333;
+.nav-link.our-work{
+  color:rgb(255, 255, 255) !important;
 }
+
+.nav-link.our-work2 {
+  color: rgb(252, 4, 252) !important;
+}
+
+
+.nav-link:hover {
+  color: #420cd8 !important;
+}
+
 
 .hero p {
   font-size: 18px;
   margin-bottom: 20px;
   color: #333;
-}
-
-.btn {
-  display: inline-block;
-  padding: 12px 24px;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  background-color: #333;
-  color: #fff;
-  border-radius: 4px;
-}
-
-.btn:hover {
-  background-color: #555;
 }
 
 .section {
@@ -83,16 +89,25 @@ body {
   margin-bottom: 40px;
 }
 
-
 .hero {
   position: relative;
-  height: 499px;
+  height: 863px;
   max-width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
+}
+
+.hero-text {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  font-weight: bold; 
+  font-size: 85px;
+  color: rgba(9, 3, 66, 0.932);
+  z-index: 1;
+}
+
+.h1-image{
+  position: absolute;
 }
 
 .background-video {
@@ -103,23 +118,27 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-right: 500px;
+
 }
 
 video {
   position: absolute;
-  max-width: 100%;
-  max-height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transform: scaleX(-1);
 }
 
-.container {
-  position: relative;
-  z-index: 1;
+.container1 {
+  background-color: rgb(1, 24, 68);
   text-align: left;
-  width: 2000;
-  margin-left: auto;
-  margin-right: auto;
-  
+  padding-left: 200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
 }
 
 .highlight {
@@ -130,14 +149,59 @@ video {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-
 footer {
   background-color: #333;
   color: #fff;
   padding: 20px;
   text-align: center;
+  margin-top: 40px;
 }
 
 footer p {
   margin-bottom: 10px;
+}
+
+header {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+.tile-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.tile {
+  position: relative; /* Add position relative to the tile */
+  flex: 0 0 calc(50% - 15px); /* Adjust the width of the tiles based on the number of tiles and desired gap */
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+}
+
+.tile::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(131, 131, 131);
+  z-index: 1;
+  opacity: .1; /* Hide the pseudo-element by default */
+}
+
+.tile:hover::after {
+  opacity: .8; /* Show the pseudo-element on hover */
 }

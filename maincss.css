@@ -7,6 +7,8 @@ body {
   padding: 0;
 }
 
+
+
 .container-head{
   text-align: left;
   padding: 20px;
@@ -62,9 +64,6 @@ body {
   color:rgb(255, 255, 255) !important;
 }
 
-.nav-link.our-work2 {
-  color: rgb(252, 4, 252) !important;
-}
 
 
 .nav-link:hover {
@@ -204,4 +203,33 @@ header {
 
 .tile:hover::after {
   opacity: .8; /* Show the pseudo-element on hover */
+}
+
+.prmcolour{
+  color: rgb(1, 24, 68);
+}
+
+.hfooter{
+    font-size: 26px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(1, 24, 68);
+  font-size: 14px;
+
+}
+
+/* Styles for hover state */
+a:hover {
+  color: #420cd8;
+}
+
+.footer-image {
+  width: 100vw;
+  height: 275px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
 }

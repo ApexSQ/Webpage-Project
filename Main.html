@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <!-- Navigation -->
+
     <nav class="navbar fixed-top shadow-sm navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -44,10 +45,11 @@
       </div>
     </nav>
 </head>
+
+
 <body>
 
 
-  <main>
     <!-- Hero section -->
     <section class="hero shadow">
       <div class="container">
@@ -65,88 +67,112 @@
         </video>
       </div>
     </section>
-  </main>
-
-  <hr>
 
 
 
+
+
+  <!--Footer-->
+  <footer class="footer bg-light my-1">
+    <img src="https://clearwateragency.com.au/wp-content/themes/clearwater/assets/images/footer-bg.jpg" class="footer-image" style=" height: 275;" alt="Footer Background Image">
+    <div class="container-flex py-5">
+      <div class="row justify-content-center text-start ">
+        <div class="col-2 pt-1 prmcolour">
+          <h1 class="pb-5 font-weight-bold hfooter">Contacts</h1>
+          <strong>Address:</strong>
+            <p> Level 6, 19 William St, <br> Cremorne VIC 3121</p>
+            <strong>Phone:</strong>
+            <a href="">1300 796 122</a>
+            <div class="flex-fill justify-content-between my-4">
+              <a href="#"><i class="bi bi-instagram p-2"></i></a>
+              <a href="#"><i class="bi bi-facebook p-2"></i></a>
+              <a href="#"><i class="bi bi-linkedin p-2"></i></a>
+            </div>
+            <p >Clearwater® is a registered trademark. All content copyright © 2022 Clearwater Agency. Privacy Policy</p>
+        </div>
+        <div class="col-2 pt-1 prmcolour">
+          <h1 class="pb-5 font-weight-bold  hfooter">Recent Blogs</h1>
+          <p>
+            <ul class="list-unstyled">
+                <li class="pb-1"><a href="#">Clearwater Agency Awarded Best Local SEO Campaign at the 2023 Global Search Awards</a></li>
+                <li class="pb-1"><a href="#">How to Use ChatGPT for Marketing and Creativity</a></li>
+                <li class="pb-1"><a href="#">Challenges of Google Analytics 4: Insights, Concerns, and Benefits</a></li>
+                <li class="pb-1"><a href="#">How to Measure the ROI of Your SEO Campaigns – 8 Things You Need to Know</a></li>
+                <li class="pb-1"><a href="#">Clearwater Agency – Shortlisted for 6 Awards at the Global Search Awards</a></li>
+            </ul>
+        </p>
+  
+        </div>
+        <div class="col-2 pt-1 prmcolour ">
+          <h1 class="pb-5 font-weight-bold prmcolour hfooter">Services</h1>
+          <p>
+            
+            <ul class="list-unstyled text-decoration: none;">
+              <li class="pb-1"><a href="#">Strategy</a></li>
+              <li class="pb-1"><a href="#">SEO</a></li>
+              <li class="pb-1"><a href="#">SEM</a></li>
+              <li class="pb-1"><a href="#">Social Media</a></li>
+              <li class="pb-1"><a href="#">Content</a></li>
+              <li class="pb-1"><a href="#">Email</a></li>
+              <li class="pb-1"><a href="#">CRO</a></li>
+              <li class="pb-1"><a href="#">Website &amp; UX</a></li>
+              <li class="pb-1"><a href="#">Blog</a></li>
+            </ul>
+          </p>
+        </div>
+        <div class="col-2 pt-1 prmcolour">
+          <h1 class="pb-5 font-weight-bold prmcolour hfooter">&nbsp;</h1>
+          <p>
+            <ul class="list-unstyled">
+              <li class="pb-1"><a href="#">Pinterest</a></li>
+              <li class="pb-1"><a href="#">TikTok</a></li>
+              <li class="pb-1"><a href="#">YouTube</a></li>
+              <li class="pb-1"><a href="#">Facebook Ads</a></li>
+              <li class="pb-1"><a href="#">Instagram Ads</a></li>
+              <li class="pb-1"><a href="#">LinkedIn Ads</a></li>
+              <li class="pb-1"><a href="#">Google Remarketing</a></li>
+              <li class="pb-1"><a href="#">Google Shopping</a></li>
+              <li class="pb-1"><a href="#">Microsoft Ads</a></li>
+            </ul>
+          </p>
+          
+        </div>
+          
+      </div>
+    </div>
+  </footer>
+
+
+
+
+<!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // Initialize Bootstrap components
+  document.addEventListener("DOMContentLoaded", function() {
+    var navbarCollapse = new bootstrap.Collapse(document.querySelector("#navbarNav"), {
+      toggle: false  // Set toggle option to false to keep the dropdown closed initially
+    });
+
+    // Add event listener to the navbar toggle button
+    var navbarToggle = document.querySelector(".navbar-toggler");
+    navbarToggle.addEventListener("click", function() {
+      // Custom code to execute when the toggle button is clicked
+      console.log("Toggle button clicked!");
+
+      // Example: Change the background color of the navigation links
+      var navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+      navLinks.forEach(function(link) {
+        link.style.backgroundColor = "none";
+      });
+
+      // Toggle the navigation bar collapse
+      navbarCollapse.toggle();
+    });
+  });
+</script>
 
 </body>
-
-
-
-<!--Footer-->
-<footer class="footer bg-light my-1">
-  <img src="https://clearwateragency.com.au/wp-content/themes/clearwater/assets/images/footer-bg.jpg" class="footer-image" style=" height: 275;" alt="Footer Background Image">
-  <div class="container-flex py-5">
-    <div class="row justify-content-center text-start ">
-      <div class="col-2 pt-1 prmcolour">
-        <h1 class="pb-5 font-weight-bold hfooter">Contacts</h1>
-        <strong>Address:</strong>
-          <p> Level 6, 19 William St, <br> Cremorne VIC 3121</p>
-          <strong>Phone:</strong>
-          <a href="">1300 796 122</a>
-          <div class="flex-fill justify-content-between my-4">
-            <a href="#"><i class="bi bi-instagram p-2"></i></a>
-            <a href="#"><i class="bi bi-facebook p-2"></i></a>
-            <a href="#"><i class="bi bi-linkedin p-2"></i></a>
-          </div>
-          <p >Clearwater® is a registered trademark. All content copyright © 2022 Clearwater Agency. Privacy Policy</p>
-      </div>
-      <div class="col-2 pt-1 prmcolour">
-        <h1 class="pb-5 font-weight-bold  hfooter">Recent Blogs</h1>
-        <p>
-          <ul class="list-unstyled">
-              <li class="pb-1"><a href="#">Clearwater Agency Awarded Best Local SEO Campaign at the 2023 Global Search Awards</a></li>
-              <li class="pb-1"><a href="#">How to Use ChatGPT for Marketing and Creativity</a></li>
-              <li class="pb-1"><a href="#">Challenges of Google Analytics 4: Insights, Concerns, and Benefits</a></li>
-              <li class="pb-1"><a href="#">How to Measure the ROI of Your SEO Campaigns – 8 Things You Need to Know</a></li>
-              <li class="pb-1"><a href="#">Clearwater Agency – Shortlisted for 6 Awards at the Global Search Awards</a></li>
-          </ul>
-      </p>
-
-      </div>
-      <div class="col-2 pt-1 prmcolour ">
-        <h1 class="pb-5 font-weight-bold prmcolour hfooter">Services</h1>
-        <p>
-          
-          <ul class="list-unstyled text-decoration: none;">
-            <li class="pb-1"><a href="#">Strategy</a></li>
-            <li class="pb-1"><a href="#">SEO</a></li>
-            <li class="pb-1"><a href="#">SEM</a></li>
-            <li class="pb-1"><a href="#">Social Media</a></li>
-            <li class="pb-1"><a href="#">Content</a></li>
-            <li class="pb-1"><a href="#">Email</a></li>
-            <li class="pb-1"><a href="#">CRO</a></li>
-            <li class="pb-1"><a href="#">Website &amp; UX</a></li>
-            <li class="pb-1"><a href="#">Blog</a></li>
-          </ul>
-        </p>
-      </div>
-      <div class="col-2 pt-1 prmcolour">
-        <h1 class="pb-5 font-weight-bold prmcolour hfooter">&nbsp;</h1>
-        <p>
-          <ul class="list-unstyled">
-            <li class="pb-1"><a href="#">Pinterest</a></li>
-            <li class="pb-1"><a href="#">TikTok</a></li>
-            <li class="pb-1"><a href="#">YouTube</a></li>
-            <li class="pb-1"><a href="#">Facebook Ads</a></li>
-            <li class="pb-1"><a href="#">Instagram Ads</a></li>
-            <li class="pb-1"><a href="#">LinkedIn Ads</a></li>
-            <li class="pb-1"><a href="#">Google Remarketing</a></li>
-            <li class="pb-1"><a href="#">Google Shopping</a></li>
-            <li class="pb-1"><a href="#">Microsoft Ads</a></li>
-          </ul>
-        </p>
-        
-      </div>
-        
-    </div>
-  </div>
-</footer>
-
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </html>

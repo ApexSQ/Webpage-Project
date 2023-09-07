@@ -14,12 +14,6 @@ body {
   padding: 20px;
 }
 
-.container {
-  max-width: 100%;
-  height: 50px;
-  margin: 0 auto;
-  padding: 20px;
-}
 
 .navbar {
   background-color: #fff;
@@ -181,12 +175,27 @@ header {
 }
 
 .tile {
-  position: relative; /* Add position relative to the tile */
-  flex: 0 0 calc(50% - 15px); /* Adjust the width of the tiles based on the number of tiles and desired gap */
+  position: relative;
+  flex: 0 0 calc(50% - 15px);
   height: 400px;
   background-size: cover;
   background-position: center;
+  background-color: #0000004d;
   margin-bottom: 20px;
+  overflow: hidden;
+}
+
+/* HEEEERRRR */
+
+.tile1 {
+  position: absolute;
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-color: #0000004d;
+  margin-bottom: 20px;
+  overflow: hidden;
 }
 
 .tile::after {
@@ -196,13 +205,59 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(131, 131, 131);
-  z-index: 1;
-  opacity: .1; /* Hide the pseudo-element by default */
+  background-color: rgba(0, 0, 0, 0.466); 
+  opacity: 0;
+  transition: opacity 0s ease; /* Add a transition */
+  z-index: 0;
 }
 
 .tile:hover::after {
-  opacity: .8; /* Show the pseudo-element on hover */
+  opacity: 1;
+  z-index: 0;
+}
+
+.tile .overlay {
+  position: relative; /* Add position relative to the overlay */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.tile .overlay .text {
+  color: #ffffff;
+  display: none; 
+  font-size: 50px;
+
+}
+
+.tile .overlay .btn {
+  margin-top: auto; /* Push the button to the bottom */
+}
+
+.tile:hover .overlay .text {
+  display:contents; 
+
+}
+
+.tile-container{
+  margin-bottom: 20px;
+
+
+}
+
+.side-note-container{
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 12px;
+  z-index: 3;
+
+}
+
+.btn-outline-primary1{
+z-index: 3;
 }
 
 .prmcolour{

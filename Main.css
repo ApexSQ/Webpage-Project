@@ -167,6 +167,22 @@ header {
   padding: 100px;
 }
 
+.maintiles{
+  background-color: #001b42;
+  margin-left: 50px;
+  height: 360px;
+  width: 350px;
+  color: #f4f4f4;
+}
+
+
+
+
+
+
+
+
+
 .tile-wrapper {
   display: flex;
   justify-content: space-between;

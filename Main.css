@@ -170,20 +170,30 @@ header {
 
 
 .maintiles {
-  background-color: #001b42;
-  margin-left: 50px;
+  background-color: #ffffff;
+  margin: 10px;
   height: 360px;
   width: 350px;
-  color: #f4f4f4;
+  color: #020202;
+  position: relative;
+  border: #001b42;
 }
 
 .maintiles2 {
-  background-color: #2b2c2c;
-  margin-left: 50px;
+  background-color: #001b42;
+  margin: 10px;
   height: 360px;
   width: 350px;
   color: #f4f4f4;
+  z-index: 5;
+  position: absolute;
 }
+
+.tile-container1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 
 .maintiles2:hover{
   opacity: 0;
@@ -301,12 +311,20 @@ header {
   text-align: center;
   border-radius: 25px;
   font-size: 18px;
-  border: 2px solid #fff;
+  border: 2px solid #000000;
 }
+
 
 .tile:hover .view-results-btn {
   background:#ffffff00 ;
   color: #fff;
+
+}
+
+.maintiles2:hover .view-results-btn {
+  background:#ffffff00 ;
+  color: #fff;
+  border: 2px solid #000000;
 
 }
 

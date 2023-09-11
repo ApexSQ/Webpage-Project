@@ -195,8 +195,12 @@ header {
 }
 
 
-.maintiles2:hover{
+.maintiles2:hover {
   opacity: 0;
+}
+
+.view-results-btn:hover .maintiles2{
+  opacity: 0 !important; 
 }
 
 .list-dot-color {
@@ -311,7 +315,8 @@ header {
   text-align: center;
   border-radius: 25px;
   font-size: 18px;
-  border: 2px solid #ffffff;
+  border: 2px solid #000000;
+  z-index: 10;
 }
 
 
@@ -321,17 +326,18 @@ header {
 
 }
 
-.maintiles2:hover .view-results-btn {
-  background:#ffffff00 ;
+.maintiles:hover .view-results-btn {
+  background:#1c2bb3 ;
   color: #fff;
   border: 2px solid #000000;
 
 }
 
+
+
 .view-results-btn:hover ~ .overlay .tile1,
   .side-note-container:hover ~ .overlay .tile1 {
     opacity: 0;
-    
   }
 
 .tile:hover .overlay .text {

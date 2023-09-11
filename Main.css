@@ -167,7 +167,9 @@ header {
   padding: 100px;
 }
 
-.maintiles{
+
+
+.maintiles {
   background-color: #001b42;
   margin-left: 50px;
   height: 360px;
@@ -175,12 +177,40 @@ header {
   color: #f4f4f4;
 }
 
+.maintiles2 {
+  background-color: #2b2c2c;
+  margin-left: 50px;
+  height: 360px;
+  width: 350px;
+  color: #f4f4f4;
+}
+
+.maintiles2:hover{
+  opacity: 0;
+}
+
+.list-dot-color {
+  list-style: none;
+}
+
+.list-dot-color li:before {
+  content: "\2022"; 
+  color:rgb(71, 20, 155); 
+  font-size: 1.2em; 
+  margin-right: 0.5em; 
+}
 
 
+.company-list .company-it {
+  height: 100px;
+  transform: scale(.85);
+}
 
-
-
-
+.company-list .company-it img {
+  padding: 0 25px;
+  object-fit: cover;
+  object-fit:scale-down;
+}
 
 
 .tile-wrapper {

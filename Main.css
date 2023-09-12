@@ -331,6 +331,29 @@ header {
   z-index: 10;
 }
 
+.Cbnt {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  height: 50px;
+  padding: 0 30px;
+  line-height: 46px;
+  background: #7c2fc5;
+  color: #000;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 25px;
+  font-size: 18px;
+  border: 2px solid #000000;
+  z-index: 10;
+}
+
+.Cbnt:hover{
+  background:#ffffff00 ;
+  color: #fff;
+
+}
+
 
 .tile:hover .view-results-btn {
   background:#ffffff00 ;

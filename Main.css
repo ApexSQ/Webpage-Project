@@ -355,6 +355,15 @@ header {
 }
 
 
+
+.card1:hover{
+  cursor: pointer;
+}
+
+.my-input::placeholder {
+  color: rgba(82, 8, 255, 0.979); 
+}
+
 .tile:hover .view-results-btn {
   background:#ffffff00 ;
   color: #fff;

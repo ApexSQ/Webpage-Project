@@ -120,7 +120,7 @@ body {
 .container1 {
   background-color: rgb(1, 24, 68);
   text-align: left;
-  padding-left: 200px;
+
   padding-top: 50px;
   padding-bottom: 50px;
 
@@ -366,6 +366,25 @@ header {
   margin-bottom: 5px;
   display: flex;
   align-items: center;
+}
+
+.btnnav{
+  position: relative; 
+  background-color: #7833f3; 
+  color: #f8f9fa;
+
+}
+
+.btnnav:hover{
+
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.thick-underline {
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 6px; 
+  
 }
 
 .tile-wrapper {

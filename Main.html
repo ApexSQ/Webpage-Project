@@ -22,9 +22,10 @@
         <a class="navbar-brand" href="Main.html">
           <img src="https://clearwateragency.com.au/wp-content/uploads/2021/05/logo.svg" height="60" width="200" alt="logo" data-lazy-src="https://clearwateragency.com.au/wp-content/uploads/2021/05/logo.svg" data-ll-status="loaded" class="entered lazyloaded">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon rounded" style="background-color: white;"></span>
+    </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -63,10 +64,10 @@
     <section class="hero shadow">
       <div class="container">
         <div class="row">
-          <div class="col-12">
-            <h1 class="hero-text">Creating <br> powerhouse <br> brands with digital <br> marketing. <br>
-              <img src="https://clearwateragency.com.au/wp-content/uploads/2023/07/GSA23_Winner1.png" alt="award" width="220" height="80" data-lazy-src="https://clearwateragency.com.au/wp-content/uploads/2023/07/GSA23_Winner1.png" data-ll-status="loaded" class="entered lazyloaded">
-            </h1>
+          <div class="col-lg-12">
+              <div class="hero-text">Creating <br> powerhouse <br> brands with digital <br> marketing. <br>
+                <img src="https://clearwateragency.com.au/wp-content/uploads/2023/07/GSA23_Winner1.png" alt="award" width="220" height="80" data-lazy-src="https://clearwateragency.com.au/wp-content/uploads/2023/07/GSA23_Winner1.png" data-ll-status="loaded" class="entered lazyloaded">
+              </div>
           </div>
         </div>
       </div>
@@ -903,38 +904,43 @@
     </div>
   </footer>
 
-<!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
 
-<script>
-  // Initialize Bootstrap components
-  document.addEventListener("DOMContentLoaded", function() {
-    var navbarCollapse = new bootstrap.Collapse(document.querySelector("#navbarNav"), {
-      toggle: false  // Set toggle option to false to keep the dropdown closed initially
-    });
-
-    // Add event listener to the navbar toggle button
-    var navbarToggle = document.querySelector(".navbar-toggler");
-    navbarToggle.addEventListener("click", function() {
-      // Custom code to execute when the toggle button is clicked
-      console.log("Toggle button clicked!");
-
-      // Example: Change the background color of the navigation links
-      var navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-      navLinks.forEach(function(link) {
-        link.style.backgroundColor = "none";
+  <script>
+    // Initialize Bootstrap components
+    document.addEventListener("DOMContentLoaded", function() {
+      var navbarCollapse = new bootstrap.Collapse(document.querySelector("#navbarNav"), {
+        toggle: false  // Set toggle option to false to keep the dropdown closed initially
       });
-
-      // Toggle the navigation bar collapse
-      navbarCollapse.toggle();
-    });
-  });
-
   
-</script>
+      // Add event listener to the navbar toggle button
+      var navbarToggle = document.querySelector(".navbar-toggler");
+      navbarToggle.addEventListener("click", function() {
+        // Custom code to execute when the toggle button is clicked
+        console.log("Toggle button clicked!");
+  
+        // Example: Change the background color of the navigation links
+        var navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+        navLinks.forEach(function(link) {
+          link.style.backgroundColor = "none";
+        });
+  
+        // Toggle the navigation bar collapse
+        navbarCollapse.toggle();
+      });
+    });
+  </script>
+  
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
 
 </body>
 </html>
+
+
+
+
+
+
+
